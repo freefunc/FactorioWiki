@@ -1,0 +1,1775 @@
+{
+  "version": "2.1.20",
+  "commit": "40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71",
+  "entries": [
+    {
+      "id": "iron-plate",
+      "name": "铁板",
+      "category": "materials",
+      "scope": "base",
+      "summary": "最常用的基础金属材料，由铁矿石冶炼而成。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-ore",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 3.2,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1450"
+    },
+    {
+      "id": "copper-plate",
+      "name": "铜板",
+      "category": "materials",
+      "scope": "base",
+      "summary": "电路与电缆生产的基础金属材料。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "copper-ore",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "copper-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 3.2,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1440"
+    },
+    {
+      "id": "steel-plate",
+      "name": "钢材",
+      "category": "materials",
+      "scope": "base",
+      "summary": "从铁板进一步冶炼，用于建筑、轨道与高级制造。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "steel-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 16.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1471"
+    },
+    {
+      "id": "stone-brick",
+      "name": "石砖",
+      "category": "materials",
+      "scope": "base",
+      "summary": "石料加工产物，可用于建筑与铺设道路。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "stone",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "stone-brick",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 3.2,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1460"
+    },
+    {
+      "id": "iron-gear-wheel",
+      "name": "铁齿轮",
+      "category": "materials",
+      "scope": "base",
+      "summary": "传送带、机械与制造设备的常用中间产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L763"
+    },
+    {
+      "id": "copper-cable",
+      "name": "铜线",
+      "category": "materials",
+      "scope": "base",
+      "summary": "由铜板制成，是电子电路的重要原料。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "copper-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "copper-cable",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L881"
+    },
+    {
+      "id": "electronic-circuit",
+      "name": "电子电路",
+      "category": "materials",
+      "scope": "base",
+      "summary": "基础电路，广泛用于自动化生产与机器制造。",
+      "kind": "recipe",
+      "aliases": [
+        "绿板"
+      ],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "copper-cable",
+          "amount": 3.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "electronic-circuit",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L770"
+    },
+    {
+      "id": "advanced-circuit",
+      "name": "高级电路",
+      "category": "materials",
+      "scope": "base",
+      "summary": "结合塑料与基础电路，用于高级设备和科研。",
+      "kind": "recipe",
+      "aliases": [
+        "红板"
+      ],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "plastic-bar",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "copper-cable",
+          "amount": 4.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "advanced-circuit",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 6.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2092"
+    },
+    {
+      "id": "processing-unit",
+      "name": "处理器",
+      "category": "materials",
+      "scope": "base",
+      "summary": "需要硫酸参与制造的高级电子中间产物。",
+      "kind": "recipe",
+      "aliases": [
+        "蓝板"
+      ],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "advanced-circuit",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "sulfuric-acid",
+          "amount": 5.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "processing-unit",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2106"
+    },
+    {
+      "id": "plastic-bar",
+      "name": "塑料棒",
+      "category": "materials",
+      "scope": "base",
+      "summary": "煤与石油气的化工产物，用于高级电路等配方。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "petroleum-gas",
+          "amount": 20.0,
+          "fluid": true
+        },
+        {
+          "id": "coal",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "plastic-bar",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 1.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L321"
+    },
+    {
+      "id": "sulfur",
+      "name": "硫磺",
+      "category": "materials",
+      "scope": "base",
+      "summary": "石油加工链的重要中间产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "water",
+          "amount": 30.0,
+          "fluid": true
+        },
+        {
+          "id": "petroleum-gas",
+          "amount": 30.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "sulfur",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 1.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L431"
+    },
+    {
+      "id": "battery",
+      "name": "电池",
+      "category": "materials",
+      "scope": "base",
+      "summary": "由金属与硫酸加工，用于蓄电池和其他电力设备。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "sulfuric-acid",
+          "amount": 20.0,
+          "fluid": true
+        },
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "copper-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "battery",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 4.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2373"
+    },
+    {
+      "id": "engine-unit",
+      "name": "内燃机",
+      "category": "materials",
+      "scope": "base",
+      "summary": "由钢材、齿轮与管道制造的机械中间产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "engine-unit",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1123"
+    },
+    {
+      "id": "electric-engine-unit",
+      "name": "电动机",
+      "category": "materials",
+      "scope": "base",
+      "summary": "在内燃机基础上进一步加工，需要润滑油。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "engine-unit",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "lubricant",
+          "amount": 15.0,
+          "fluid": true
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "electric-engine-unit",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2320"
+    },
+    {
+      "id": "transport-belt",
+      "name": "传送带",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "基础物品运输设施，适合早期工厂物流。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "transport-belt",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L782"
+    },
+    {
+      "id": "fast-transport-belt",
+      "name": "高速传送带",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "由基础传送带升级，提升运输能力。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-gear-wheel",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "fast-transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1343"
+    },
+    {
+      "id": "express-transport-belt",
+      "name": "极速传送带",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "需要润滑油的传送带升级配方。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-gear-wheel",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "fast-transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "lubricant",
+          "amount": 20.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "express-transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1788"
+    },
+    {
+      "id": "underground-belt",
+      "name": "地下传送带",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "让物品流穿过建筑或其他生产线下方。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "transport-belt",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "underground-belt",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 1.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1082"
+    },
+    {
+      "id": "splitter",
+      "name": "分流器",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "分配与合并传送带上的物品流。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "transport-belt",
+          "amount": 4.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "splitter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 1.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1069"
+    },
+    {
+      "id": "inserter",
+      "name": "机械臂",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "在机器、容器与传送带之间搬运物品。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "inserter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L817"
+    },
+    {
+      "id": "fast-inserter",
+      "name": "快速机械臂",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "为吞吐需求更高的生产环节搬运物品。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "inserter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "fast-inserter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L829"
+    },
+    {
+      "id": "long-handed-inserter",
+      "name": "加长机械臂",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "跨越更远距离取放物品的机械臂。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "inserter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "long-handed-inserter",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L841"
+    },
+    {
+      "id": "pipe",
+      "name": "管道",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "连接化工设备，输送水、蒸汽和其他流体。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "pipe",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L863"
+    },
+    {
+      "id": "pump",
+      "name": "管道泵",
+      "category": "logistics",
+      "scope": "base",
+      "summary": "用于控制流体流向和流体系统连接。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "engine-unit",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "steel-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "pump",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 2.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2408"
+    },
+    {
+      "id": "assembling-machine-1",
+      "name": "组装机 1 型",
+      "category": "production",
+      "scope": "base",
+      "summary": "用于建立自动化生产线的入门组装设备。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 3.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 9.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "assembling-machine-1",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L977"
+    },
+    {
+      "id": "assembling-machine-2",
+      "name": "组装机 2 型",
+      "category": "production",
+      "scope": "base",
+      "summary": "更高级的组装设备，支持需要流体的制造任务。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 3.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "assembling-machine-1",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "assembling-machine-2",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1056"
+    },
+    {
+      "id": "electric-mining-drill",
+      "name": "电力采矿机",
+      "category": "production",
+      "scope": "base",
+      "summary": "使用电能持续开采矿床，为生产线供应原料。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electronic-circuit",
+          "amount": 3.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 10.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "electric-mining-drill",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 2.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L792"
+    },
+    {
+      "id": "stone-furnace",
+      "name": "石炉",
+      "category": "production",
+      "scope": "base",
+      "summary": "使用燃料进行基础冶炼的早期设备。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "stone",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "stone-furnace",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L738"
+    },
+    {
+      "id": "electric-furnace",
+      "name": "电炉",
+      "category": "production",
+      "scope": "base",
+      "summary": "使用电能冶炼，减少对直接燃料供应的依赖。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "advanced-circuit",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "stone-brick",
+          "amount": 10.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "electric-furnace",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 5.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2269"
+    },
+    {
+      "id": "chemical-plant",
+      "name": "化工厂",
+      "category": "production",
+      "scope": "base",
+      "summary": "生产塑料、硫磺、电池等化工产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "chemical-plant",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 5.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2421"
+    },
+    {
+      "id": "oil-refinery",
+      "name": "炼油厂",
+      "category": "production",
+      "scope": "base",
+      "summary": "将原油送入石油加工链的核心设备。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 15.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "stone-brick",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 10.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "oil-refinery",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 8.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2305"
+    },
+    {
+      "id": "boiler",
+      "name": "锅炉",
+      "category": "power",
+      "scope": "base",
+      "summary": "消耗燃料加热流体，为蒸汽发电提供蒸汽。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "stone-furnace",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 4.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "boiler",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L744"
+    },
+    {
+      "id": "steam-engine",
+      "name": "蒸汽机",
+      "category": "power",
+      "scope": "base",
+      "summary": "利用蒸汽发电，是早期供电系统的核心设备。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-gear-wheel",
+          "amount": 8.0,
+          "fluid": false
+        },
+        {
+          "id": "pipe",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 10.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "steam-engine",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L751"
+    },
+    {
+      "id": "solar-panel",
+      "name": "太阳能板",
+      "category": "power",
+      "scope": "base",
+      "summary": "白天提供电力，可与蓄电池搭配使用。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "steel-plate",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 15.0,
+          "fluid": false
+        },
+        {
+          "id": "copper-plate",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "solar-panel",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1354"
+    },
+    {
+      "id": "accumulator",
+      "name": "蓄电池",
+      "category": "power",
+      "scope": "base",
+      "summary": "储存电能，在供电不足时补充电网需求。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "iron-plate",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "battery",
+          "amount": 5.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "accumulator",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2257"
+    },
+    {
+      "id": "automation-science-pack",
+      "name": "自动化科技包",
+      "category": "science",
+      "scope": "base",
+      "summary": "早期自动化研究使用的基础科技包。",
+      "kind": "recipe",
+      "aliases": [
+        "红瓶"
+      ],
+      "ingredients": [
+        {
+          "id": "copper-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-gear-wheel",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "automation-science-pack",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 5.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1000"
+    },
+    {
+      "id": "logistic-science-pack",
+      "name": "物流科技包",
+      "category": "science",
+      "scope": "base",
+      "summary": "用传送带与机械臂制造，支持物流等研究。",
+      "kind": "recipe",
+      "aliases": [
+        "绿瓶"
+      ],
+      "ingredients": [
+        {
+          "id": "inserter",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "logistic-science-pack",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 6.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1018"
+    },
+    {
+      "id": "chemical-science-pack",
+      "name": "化工科技包",
+      "category": "science",
+      "scope": "base",
+      "summary": "涉及石油化工与机械制造的科技包。",
+      "kind": "recipe",
+      "aliases": [
+        "蓝瓶"
+      ],
+      "ingredients": [
+        {
+          "id": "engine-unit",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "advanced-circuit",
+          "amount": 3.0,
+          "fluid": false
+        },
+        {
+          "id": "sulfur",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "chemical-science-pack",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 24.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1961"
+    },
+    {
+      "id": "production-science-pack",
+      "name": "生产科技包",
+      "category": "science",
+      "scope": "base",
+      "summary": "面向高级生产技术的科技包。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electric-furnace",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "productivity-module",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "rail",
+          "amount": 30.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "production-science-pack",
+          "amount": 3.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 21.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L1999"
+    },
+    {
+      "id": "utility-science-pack",
+      "name": "效能科技包",
+      "category": "science",
+      "scope": "base",
+      "summary": "使用高级电子和轻质结构等材料的科技包。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "low-density-structure",
+          "amount": 3.0,
+          "fluid": false
+        },
+        {
+          "id": "processing-unit",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "flying-robot-frame",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "utility-science-pack",
+          "amount": 3.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 21.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/base/prototypes/recipe.lua#L2018"
+    },
+    {
+      "id": "foundry",
+      "name": "铸造厂",
+      "category": "production",
+      "scope": "space",
+      "summary": "太空时代的冶金设备；制造配方带有地表条件。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "tungsten-carbide",
+          "amount": 50.0,
+          "fluid": false
+        },
+        {
+          "id": "steel-plate",
+          "amount": 50.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 30.0,
+          "fluid": false
+        },
+        {
+          "id": "refined-concrete",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "lubricant",
+          "amount": 20.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "foundry",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [
+        {
+          "property": "pressure",
+          "min": 4000.0,
+          "max": 4000.0
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L1370"
+    },
+    {
+      "id": "electromagnetic-plant",
+      "name": "电磁工厂",
+      "category": "production",
+      "scope": "space",
+      "summary": "太空时代的电子制造设备；制造需要特定磁场条件。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "holmium-plate",
+          "amount": 150.0,
+          "fluid": false
+        },
+        {
+          "id": "steel-plate",
+          "amount": 50.0,
+          "fluid": false
+        },
+        {
+          "id": "processing-unit",
+          "amount": 50.0,
+          "fluid": false
+        },
+        {
+          "id": "refined-concrete",
+          "amount": 50.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "electromagnetic-plant",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [
+        {
+          "property": "magnetic-field",
+          "min": 99.0,
+          "max": null
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L2220"
+    },
+    {
+      "id": "biochamber",
+      "name": "生物室",
+      "category": "production",
+      "scope": "space",
+      "summary": "太空时代的生物加工设备；制造配方带有地表条件。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "nutrients",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "pentapod-egg",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "iron-plate",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "landfill",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "biochamber",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 20.0,
+      "timeDefault": false,
+      "conditions": [
+        {
+          "property": "pressure",
+          "min": 2000.0,
+          "max": 2000.0
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L1895"
+    },
+    {
+      "id": "cryogenic-plant",
+      "name": "低温工厂",
+      "category": "production",
+      "scope": "space",
+      "summary": "太空时代的低温加工设备；制造配方带有地表条件。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "refined-concrete",
+          "amount": 40.0,
+          "fluid": false
+        },
+        {
+          "id": "superconductor",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "processing-unit",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "lithium-plate",
+          "amount": 20.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "cryogenic-plant",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [
+        {
+          "property": "pressure",
+          "min": 100.0,
+          "max": 600.0
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L2472"
+    },
+    {
+      "id": "turbo-transport-belt",
+      "name": "涡轮传送带",
+      "category": "logistics",
+      "scope": "space",
+      "summary": "太空时代新增的传送带等级，使用钨板升级。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "tungsten-plate",
+          "amount": 5.0,
+          "fluid": false
+        },
+        {
+          "id": "express-transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "lubricant",
+          "amount": 20.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "turbo-transport-belt",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 0.5,
+      "timeDefault": true,
+      "conditions": [
+        {
+          "property": "pressure",
+          "min": 4000.0,
+          "max": 4000.0
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L1697"
+    },
+    {
+      "id": "big-mining-drill",
+      "name": "大型采矿机",
+      "category": "production",
+      "scope": "space",
+      "summary": "太空时代的大型采矿设备，制造需要冶金材料。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "electric-mining-drill",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "molten-iron",
+          "amount": 200.0,
+          "fluid": true
+        },
+        {
+          "id": "tungsten-carbide",
+          "amount": 20.0,
+          "fluid": false
+        },
+        {
+          "id": "electric-engine-unit",
+          "amount": 10.0,
+          "fluid": false
+        },
+        {
+          "id": "advanced-circuit",
+          "amount": 10.0,
+          "fluid": false
+        }
+      ],
+      "results": [
+        {
+          "id": "big-mining-drill",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 30.0,
+      "timeDefault": false,
+      "conditions": [
+        {
+          "property": "pressure",
+          "min": 4000.0,
+          "max": 4000.0
+        }
+      ],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L1779"
+    },
+    {
+      "id": "superconductor",
+      "name": "超导体",
+      "category": "materials",
+      "scope": "space",
+      "summary": "太空时代的电子中间产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "holmium-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "copper-plate",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "plastic-bar",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "light-oil",
+          "amount": 5.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "superconductor",
+          "amount": 2.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 5.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L2242"
+    },
+    {
+      "id": "supercapacitor",
+      "name": "超级电容",
+      "category": "materials",
+      "scope": "space",
+      "summary": "太空时代的高级电子中间产物。",
+      "kind": "recipe",
+      "aliases": [],
+      "ingredients": [
+        {
+          "id": "holmium-plate",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "superconductor",
+          "amount": 2.0,
+          "fluid": false
+        },
+        {
+          "id": "electronic-circuit",
+          "amount": 4.0,
+          "fluid": false
+        },
+        {
+          "id": "battery",
+          "amount": 1.0,
+          "fluid": false
+        },
+        {
+          "id": "electrolyte",
+          "amount": 10.0,
+          "fluid": true
+        }
+      ],
+      "results": [
+        {
+          "id": "supercapacitor",
+          "amount": 1.0,
+          "fluid": false
+        }
+      ],
+      "seconds": 10.0,
+      "timeDefault": false,
+      "conditions": [],
+      "source": "https://github.com/wube/factorio-data/blob/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71/space-age/prototypes/recipe.lua#L2261"
+    }
+  ]
+}
