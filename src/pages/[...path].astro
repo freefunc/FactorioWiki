@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Catalog from '../components/Catalog.jsx';
+import Wiki from '../components/Wiki.jsx';
+import { staticPages, summariesFor } from '../lib/model.js';
+export function getStaticPaths() {
+  return staticPages().map(page => ({ params: { path: page.path.replace(/^\/|\/$/g, '') }, props: { page } }));
+}
+const { page } = Astro.props;
+---
+<Layout page={page}>
+  {page.kind === 'catalog' ? <Catalog scope={page.scope} category={page.category} type={page.type} entries={summariesFor(page.scope)} client:load /> : <Wiki page={page} />}
+</Layout>

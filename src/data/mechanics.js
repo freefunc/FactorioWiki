@@ -21,9 +21,9 @@ export default [
     id: 'recipe-time', name: '配方时间与制造速度', category: 'mechanics', scope: 'base', kind: 'guide',
     aliases: ['产能', '速度', 'energy_required', 'crafting speed'], summary: '分清配方基础耗时、机器制造速度与最终产出。',
     sections: [
-      { title: '配方里的秒数代表什么', text: '配方的 energy_required 表示基础制造时间，单位为秒；它不是机器的耗电量。未显式填写该字段时，RecipePrototype 的默认值为 0.5 秒。本 Wiki 对这类配方注明“原型默认值”。' },
+      { title: '配方里的秒数代表什么', text: '配方的 energy_required 表示基础制造时间，单位为秒；它不是机器的耗电量。未显式填写该字段时，RecipePrototype 的默认值为 0.5 秒。导出数据已包含默认制造时间。' },
       { title: '换算实际产出', text: '在持续运行且不考虑产能加成时：单次制造时间 = 配方基础耗时 ÷ 有效制造速度；每秒产出 = 每次产量 × 有效制造速度 ÷ 配方基础耗时。例如铁齿轮基础耗时为 0.5 秒，每次产出 1 个；有效制造速度为 1 时，理论产出为每秒 2 个。供电、原料、输出阻塞和插件会影响实际表现。' },
-      { title: '当前配方的计算边界', text: '本 Wiki 展示官方原型中的单次投入与产出，不叠加品质、产能、插件、科技增益或第三方模组。查询太空时代建筑时，还应检查配方的地表条件。' },
+      { title: '当前配方的计算边界', text: '本 Wiki 展示游戏导出数据中的基础投入与产出；随机产出使用长期平均值，不叠加品质、产能、插件、科技增益或第三方模组。查询太空时代建筑时，还应检查配方的地表条件。' },
     ], source: 'https://lua-api.factorio.com/2.1.20/prototypes/RecipePrototype.html#energy_required', related: ['iron-gear-wheel', 'assembling-machine-1', 'assembling-machine-2'],
   },
   {
@@ -31,7 +31,7 @@ export default [
     aliases: ['星球', '压力', '磁场', 'Vulcanus', 'Fulgora'], summary: '理解太空时代配方中的压力与磁场限制。',
     sections: [
       { title: '材料齐全不一定能制造', text: '部分配方有 surface_conditions，只有当前地表满足条件时才能制造。例如铸造厂配方要求 pressure 恰好为 4000；电磁工厂配方要求 magnetic-field 至少为 99。这些条件描述制造配方的限制，不应直接解释成建筑只能在该地表使用。' },
-      { title: '查阅原型条件', text: '本 Wiki 将这些条件显示在配方详情中，并保留官方属性名以便核对。条件数值来自固定的 2.1.20 数据快照；第三方模组可以修改它们。' },
+      { title: '查阅原型条件', text: '配方详情按导出数据列出满足条件的制造地点。可沿来源链接核对数据；第三方模组可以修改这些条件。' },
     ], source: root + 'space-age/prototypes/recipe.lua#L1372', related: ['foundry', 'electromagnetic-plant', 'biochamber', 'cryogenic-plant'],
   },
 ];

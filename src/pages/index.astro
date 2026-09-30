@@ -1,0 +1,7 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Catalog from '../components/Catalog.jsx';
+import { summariesFor } from '../lib/model.js';
+const page = { kind: 'catalog', scope: 'space', category: 'all', type: 'craft', title: '物品与配方 · 太空时代' };
+---
+<Layout page={page}><Catalog scope="space" entries={summariesFor('space')} client:load /></Layout>
