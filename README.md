@@ -49,6 +49,20 @@ npm test
 npm run build
 ```
 
+## 所有物品的资料卡
+
+`src/data/properties.json` 覆盖本体 203 个、太空时代 304 个物品与流体（两个配置有重叠）。目录新增“物品资料”入口，可浏览没有制造配方的资源。每项都有基础资料卡，按类型补充属性。这是版本固定的属性资料，普通品质、未计入科技与插件增益。来源是 Wube 官方 `factorio-data` 的同一 2.1.20 提交；生产机器和传送带的部分参数复用 FactorioLab 导出。
+
+```sh
+git clone https://github.com/wube/factorio-data.git /tmp/factorio-official
+git -C /tmp/factorio-official checkout 40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71
+node scripts/import-properties.mjs /tmp/factorio-official
+```
+
+导入器使用 Lua AST 提取明确的字面量和简单数值表达式，处理直接的本体属性覆盖，不执行完整游戏数据阶段。不猜测无法解析的函数生成字段；这不是完整游戏原型转储。激光束构造器的基础伤害单独提取，原子弹、连锁与持续效果不汇总总伤害。资料卡提供逐条来源链接；覆盖生命值、储物／流体容量、生产参数、射程、射速、弹药、伤害及抗性。
+
+枪械伤害由弹药效果和武器倍率组成，弹丸数与单枚伤害分开显示；电力／流体炮塔使用自身的攻击数据。储物格数与物品每格堆叠上限分开显示。属性组件仅静态渲染，不向目录搜索客户端发送属性数据。
+
 ## 历史数据与机制指南
 
 旧版 `src/data/recipes.json` 与 `scripts/import-recipes.py` 保留作 48 个精选配方的原始追溯与搜索别名来源；它们不再是前端完整目录。该旧版及 4 篇机制指南基于 [Wube 官方 factorio-data 2.1.20](https://github.com/wube/factorio-data/tree/40ec3dbe6f88a96899bbd2fefbd6800cac6c1e71)。

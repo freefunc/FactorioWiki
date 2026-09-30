@@ -9,12 +9,19 @@ export function sprite(scope, id) {
   const d = data.datasets[scope];
   return d.icons[id] || d.icons[d.items[id]?.icon] || null;
 }
+export function itemSummariesFor(scope) {
+  return Object.values(data.datasets[scope].items).map(item => {
+    const recipe=data.datasets[scope].entries.find(e=>e.id===item.id);
+    const category=recipe?.category || ({'intermediate-products':'materials',other:'materials'}[item.category] || item.category);
+    return {...item,kind:'item',category,aliases:recipe?.aliases || []};
+  });
+}
 export function summariesFor(scope) {
-  return [...data.datasets[scope].entries, ...guidesFor(scope)].map(e => ({
+  return [...data.datasets[scope].entries, ...guidesFor(scope), ...itemSummariesFor(scope)].map(e => ({
     id: e.id, name: e.name, english: e.english, category: e.category, kind: e.kind,
     recipeType: e.recipeType, aliases: e.aliases, summary: e.summary,
     sprite: sprite(scope, e.icon || e.id),
-    href: e.kind === 'guide' ? guidePath(scope, e.id) : recipePath(scope, e.id),
+    href: e.kind === 'item' ? itemPath(scope,e.id) : e.kind === 'guide' ? guidePath(scope, e.id) : recipePath(scope, e.id),
   }));
 }
 export function scopeTargets(page) {
@@ -29,7 +36,7 @@ export function scopeTargets(page) {
 export function staticPages() {
   const pages = [];
   for (const scope of scopes) {
-    for (const category of categories) for (const type of ['craft', 'recycling', 'all']) {
+    for (const category of categories) for (const type of ['craft', 'recycling', 'all', 'items']) {
       pages.push({ path: catalogPath(scope, category.id, type), kind: 'catalog', scope, category: category.id, type, title: `${category.id === 'all' ? '物品与配方' : category.name} · ${scope === 'base' ? '本体' : '太空时代'}` });
     }
     for (const e of data.datasets[scope].entries) pages.push({ path: recipePath(scope, e.id), kind: 'recipe', scope, id: e.id, title: e.name });

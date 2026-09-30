@@ -9,13 +9,13 @@ export function filterEntries(entries,{query='',category='all',scope='all',type=
   const words=query.normalize('NFKC').toLowerCase().trim().split(/\s+/).filter(Boolean);
   return entries.filter(e=>(category==='all'||e.category===category)
     &&(scope==='all'||e.scope===scope)
-    &&(type==='all'||(type==='recycling'?e.recipeType==='recycling':e.recipeType!=='recycling'))
+    &&(type==='items'?e.kind==='item':e.kind!=='item'&&(type==='all'||(type==='recycling'?e.recipeType==='recycling':e.recipeType!=='recycling')))
     && words.every(word=>[e.name,e.id,e.english,e.summary,...(e.aliases||[])].join(' ').normalize('NFKC').toLowerCase().includes(word)));
 }
 export function readRoute(hash) {
   const p=new URLSearchParams(hash.replace(/^#/,''));
   return {query:p.get('q')||'',category:categories.some(c=>c.id===p.get('category'))?p.get('category'):'all',
-    scope:p.get('scope')==='base'?'base':'space',type:['all','recycling'].includes(p.get('type'))?p.get('type'):'craft',article:p.get('article'),item:p.get('item')};
+    scope:p.get('scope')==='base'?'base':'space',type:['all','recycling','items'].includes(p.get('type'))?p.get('type'):'craft',article:p.get('article'),item:p.get('item')};
 }
 export function recipesForItem(entries,id) {return entries.filter(e=>e.results.some(r=>r.id===id));}
 export function usesForItem(entries,id) {return entries.filter(e=>e.ingredients.some(r=>r.id===id));}

@@ -24,6 +24,8 @@ pages = list(root.rglob('*.html'))
 assert len(pages) > 1300, 'Recipe and item routes were not generated'
 for path in pages:
     Document(path).feed(path.read_text())
+for path in root.glob('*/items/*/index.html'):
+    assert 'property-card' in path.read_text(), f'Missing property card: {path}'
 for scope in ('base', 'space'):
     html = (root / scope / 'recipes/rocket-part/index.html').read_text()
     for value in ('投入原料', '制造设备', 'rocket-fuel', 'processing-unit'):

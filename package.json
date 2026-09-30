@@ -11,6 +11,7 @@
     "check:static": "python3 scripts/check-static.py"
   },
   "devDependencies": {
+    "luaparse": "^0.3.1",
     "vite": "^7.3.0"
   },
   "dependencies": {
